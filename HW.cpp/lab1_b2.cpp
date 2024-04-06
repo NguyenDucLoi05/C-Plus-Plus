@@ -16,7 +16,7 @@ int main()
   }
   else
     cout << "Nhap sai hay nhap lai!" << endl;
-// cach khac
+  // cach khac
   do
   {
     {
@@ -25,7 +25,6 @@ int main()
     }
     cout << tong;
     break;
-  }
-  while (n>0);
+  } while (n > 0);
   return 0;
 }
