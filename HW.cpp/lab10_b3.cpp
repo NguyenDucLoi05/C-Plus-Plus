@@ -3,20 +3,11 @@ using namespace std;
 
 int main()
 {
-  int a, b, UCLN, BCNN, vTemp;
+  int a, b, UCLN, BCNN;
   cout << "Hay nhap so a va b:" << endl;
   cin >> a >> b;
 
-  if (a > b)
-  {
-    vTemp = a;
-  }
-  else
-  {
-    vTemp = b;
-  }
-
-  for (int i = vTemp; i > 0; i--)
+  for (int i = a; i > 0; i--)
   {
     if (a % i == 0 && b % i == 0)
     {
