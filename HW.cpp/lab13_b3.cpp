@@ -6,28 +6,24 @@ int main()
   int n;
   do
   {
-    cout << "Hay nhap so n:";
+    cout << "Hay nhap so n: ";
     cin >> n;
   } while (n <= 2 || n >= 100);
-  cout << "Cac so nguyen to la: ";
+  cout << "Cac so nguyen to la: " << endl;
+  for (int i = 2; i < n; i++)
   {
-    int dem(0), m;
-    for (int j = 2; j <= n; j++)
+    bool m = true;
+    for (int j = 2; j < i; j++)
     {
-      for (int i = 2; i <= j; i++)
+      if (i % j == 0)
       {
-        if (j % i == 0)
-        {
-          dem++;
-        }
-        if (dem == 2)
-          m = j;
+        m = false;
         break;
       }
-      cout << m << " ";
     }
-    dem = 0;
+      if (m)
+        cout << i << " ";
   }
-
+  cout << endl;
   return 0;
 }
